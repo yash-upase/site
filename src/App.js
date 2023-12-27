@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga4";
-
+import { BrowserRouter as Router} from "react-router-dom";
 import Homepage from "./pages/homepage";
 import About from "./pages/about";
 import Projects from "./pages/projects";
@@ -21,17 +21,19 @@ function App() {
 	}, []);
 
 	return (
-		<div className="App">
-			<Routes>
-				<Route path="/" element={<Homepage />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/articles" element={<Articles />} />
-				<Route path="/article/:slug" element={<ReadArticle />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="*" element={<Notfound />} />
-			</Routes>
-		</div>
+		<Router basename="/site">
+			<div className="App">
+				<Routes>
+					<Route path="/" element={<Homepage />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/articles" element={<Articles />} />
+					<Route path="/article/:slug" element={<ReadArticle />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="*" element={<Notfound />} />
+				</Routes>
+			</div>
+			</Router>
 	);
 }
 
