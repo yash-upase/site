@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/site/static/css/main.fa7d76ae.css",
-    "main.js": "/site/static/js/main.dddfe92b.js",
+    "main.js": "/site/static/js/main.cf2a779c.js",
     "static/js/787.512dd3f2.chunk.js": "/site/static/js/787.512dd3f2.chunk.js",
     "static/media/nitklogo.png": "/site/static/media/nitklogo.926df6b6aedcf793b058.png",
+    "static/media/back-button.png": "/site/static/media/back-button.d19b46127c03f302fed2.png",
     "static/media/iitlogo.png": "/site/static/media/iitlogo.3d2318e15f9af41d6dd3.png",
     "index.html": "/site/index.html",
     "main.fa7d76ae.css.map": "/site/static/css/main.fa7d76ae.css.map",
-    "main.dddfe92b.js.map": "/site/static/js/main.dddfe92b.js.map",
+    "main.cf2a779c.js.map": "/site/static/js/main.cf2a779c.js.map",
     "787.512dd3f2.chunk.js.map": "/site/static/js/787.512dd3f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa7d76ae.css",
-    "static/js/main.dddfe92b.js"
+    "static/js/main.cf2a779c.js"
   ]
 }
