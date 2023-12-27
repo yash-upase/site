@@ -1,11 +1,12 @@
 {
+	"homepage": "https://yash-upase.github.io/site",
 	"name": "reactfolio",
 	"version": "1.1.0",
 	"description": "Personal portfolio template built using Reactjs",
 	"author": {
-		"name": "Tharindu N. Madhusanka",
-		"email": "mail@tharindu.dev",
-		"url": "https://tharindu.dev"
+		"name": "Yash Upase",
+		"email": "yash.upase27@gmail.com",
+		"url": "yash.upase27@gmail.com"
 	},
 	"license": "MIT",
 	"private": true,
@@ -29,6 +30,8 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"

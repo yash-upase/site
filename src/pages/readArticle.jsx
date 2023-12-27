@@ -12,6 +12,8 @@ import myArticles from "../data/articles";
 
 import "./styles/readArticle.css";
 
+import backbuttonImage from "./back-button.png"
+
 let ArticleStyle = styled.div``;
 
 const ReadArticle = () => {
@@ -49,7 +51,7 @@ const ReadArticle = () => {
 					<div className="read-article-container">
 						<div className="read-article-back">
 							<img
-								src="../back-button.png"
+								src={backbuttonImage}
 								alt="back"
 								className="read-article-back-button"
 								onClick={() => navigate(-1)}
