@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/site/static/css/main.fa7d76ae.css",
+    "main.js": "/site/static/js/main.dddfe92b.js",
+    "static/js/787.512dd3f2.chunk.js": "/site/static/js/787.512dd3f2.chunk.js",
+    "static/media/nitklogo.png": "/site/static/media/nitklogo.926df6b6aedcf793b058.png",
+    "static/media/iitlogo.png": "/site/static/media/iitlogo.3d2318e15f9af41d6dd3.png",
+    "index.html": "/site/index.html",
+    "main.fa7d76ae.css.map": "/site/static/css/main.fa7d76ae.css.map",
+    "main.dddfe92b.js.map": "/site/static/js/main.dddfe92b.js.map",
+    "787.512dd3f2.chunk.js.map": "/site/static/js/787.512dd3f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa7d76ae.css",
+    "static/js/main.dddfe92b.js"
+  ]
+}
