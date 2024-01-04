@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/site/static/css/main.fa7d76ae.css",
-    "main.js": "/site/static/js/main.57914801.js",
+    "main.js": "/site/static/js/main.4014c179.js",
     "static/js/787.512dd3f2.chunk.js": "/site/static/js/787.512dd3f2.chunk.js",
     "static/media/about.jpg": "/site/static/media/about.00e013425459506ffc2b.jpg",
     "static/media/homepage.jpg": "/site/static/media/homepage.00e013425459506ffc2b.jpg",
+    "static/media/Yashraj__CV.pdf": "/site/static/media/Yashraj__CV.bde4d03fca773a9fc347.pdf",
     "static/media/earth6.jpg": "/site/static/media/earth6.55128949c6872f52213b.jpg",
     "static/media/nitklogo.png": "/site/static/media/nitklogo.926df6b6aedcf793b058.png",
     "static/media/welcome.jpg": "/site/static/media/welcome.1571e24fc2aa6d722f07.jpg",
@@ -12,11 +13,11 @@
     "static/media/iitlogo.png": "/site/static/media/iitlogo.3d2318e15f9af41d6dd3.png",
     "index.html": "/site/index.html",
     "main.fa7d76ae.css.map": "/site/static/css/main.fa7d76ae.css.map",
-    "main.57914801.js.map": "/site/static/js/main.57914801.js.map",
+    "main.4014c179.js.map": "/site/static/js/main.4014c179.js.map",
     "787.512dd3f2.chunk.js.map": "/site/static/js/787.512dd3f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa7d76ae.css",
-    "static/js/main.57914801.js"
+    "static/js/main.4014c179.js"
   ]
 }
