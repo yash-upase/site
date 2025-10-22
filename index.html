@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashraj Upase | PhD Researcher in Hydrometeorological Sciences</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'Georgia', 'serif'],
+                    },
+                    colors: {
+                        'academic-blue': '#1a365d',
+                        'academic-blue-light': '#2d3748',
+                        'accent-teal': '#0d9488',
+                        'accent-gold': '#d97706',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #1e293b;
+            line-height: 1.7;
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #2563eb 100%);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .nav-link:hover {
+            color: white;
+            transform: translateY(-1px);
+        }
+        .nav-link.active {
+            color: white;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 1rem;
+            right: 1rem;
+            height: 2px;
+            background: white;
+            border-radius: 2px;
+        }
+        .page-content {
+            animation: fadeIn 0.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #0d9488 0%, #2563eb 100%);
+            border-radius: 2px;
+        }
+        .publication-item {
+            border-left: 3px solid #e2e8f0;
+            transition: border-color 0.3s ease;
+        }
+        .publication-item:hover {
+            border-left-color: #0d9488;
+        }
+        .profile-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .profile-image-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(26, 54, 93, 0.1) 0%, rgba(13, 148, 136, 0.1) 100%);
+            pointer-events: none;
+        }
+        .stat-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #e0f2fe;
+            color: #0c4a6e;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 0.25rem;
+        }
+        #doc-content {
+            font-family: 'Merriweather', Georgia, serif;
+        }
+        .research-interest-tag {
+            background: linear-gradient(135deg, #0d9488 0%, #0891b2 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            display: inline-block;
+            margin: 0.25rem;
+            transition: transform 0.2s ease;
+        }
+        .research-interest-tag:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <header class="sticky top-0 z-50 header-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <div class="mb-4 sm:mb-0">
+                    <h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Yashraj Upase</h1>
+                    <p class="text-sm text-gray-200 mt-1">PhD Researcher • Hydrometeorological Sciences & AI</p>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-2 sm:gap-1">
+                    <a class="nav-link active" data-page="home">Home</a>
+                    <a class="nav-link" data-page="research">Research</a>
+                    <!-- <a class="nav-link" data-page="publications">Publications</a> -->
+                    <a class="nav-link" data-page="cv">CV</a>
+                    <!-- <a class="nav-link" data-page="library">Library</a> -->
+                    <a class="nav-link" data-page="contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div id="content-container"></div>
+    </main>
+
+    <footer class="mt-20 py-8 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+                <p>&copy; 2025 Yashraj Upase. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <!-- <a href="#" class="hover:text-academic-blue transition">Google Scholar</a> -->
+                    <!-- <a href="#" class="hover:text-academic-blue transition">ResearchGate</a> -->
+                    <a href="https://www.linkedin.com/in/yash-upase/" class="hover:text-academic-blue transition">GitHub</a>
+                    <a href="https://github.com/yash-upase" class="hover:text-academic-blue transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const contentContainer = document.getElementById('content-container');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const placeholderImage = 'https://placehold.co/400x550/1a365d/ffffff?text=Yashraj+Upase%0APhD+Researcher';
+
+        const pages = {
+            home: `
+                <div class="page-content">
+                    <div class="grid lg:grid-cols-3 gap-12 items-start mb-16">
+                        <div class="lg:col-span-1">
+                            <div class="profile-image-container sticky top-24">
+                                <img src="${placeholderImage}" alt="Yashraj Upase" class="w-full h-auto">
+                            </div>
+                            <div class="mt-6 space-y-4">
+                                <div class="bg-white rounded-lg p-4 shadow-md">
+                                    <h3 class="font-semibold text-lg text-academic-blue mb-2">Quick Links</h3>
+                                    <div class="space-y-2">
+                                        <!--<a href="mailto:yash.upase27@gmail.com" class="block text-sm text-gray-700 hover:text-accent-teal transition">📧 yash.upase27@gmail.com</a>
+                                        <a href="#" class="block text-sm text-gray-700 hover:text-accent-teal transition">🎓 Google Scholar</a>
+                                        <a href="#" class="block text-sm text-gray-700 hover:text-accent-teal transition">🔬 ResearchGate</a>-->
+                                        <a href="https://github.com/yash-upase" class="block text-sm text-gray-700 hover:text-accent-teal transition">💻 GitHub</a>
+                                        <a href="https://www.linkedin.com/in/yash-upase/" class="block text-sm text-gray-700 hover:text-accent-teal transition">🔗 LinkedIn</a>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg p-4 shadow-md">
+                                    <h3 class="font-semibold text-lg text-academic-blue mb-2">Affiliation</h3>
+                                    <p class="text-sm text-gray-700">Indian Institute of Technology Hyderabad</p>
+                                    <p class="text-sm text-gray-600">Department of Climate Change</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lg:col-span-2 space-y-8">
+                            <div>
+                                <h2 class="text-5xl font-bold text-academic-blue mb-4">Welcome</h2>
+                                <p class="text-xl text-gray-600 font-serif italic mb-6">
+                                    Advancing the frontiers of precipitation science through deep learning and data-driven satellite hydrometeorology .
+                                </p>
+                            </div>
+
+                            <div class="prose max-w-none">
+                                <p class="text-lg leading-relaxed mb-4">
+                                    I am a <strong> Greenko-IITH PhD scholar</strong> at the <strong>Climate Change Department, Indian Institute of Technology Hyderabad (IIT-H)</strong>, where my research focuses on developing novel deep learning architectures for analyzing satellite retreived precipitation data for improvement in rainfall estimates in challenging orographic regions. My work sits at the intersection of artificial intelligence, precipitation science, and remote sensing.
+                                </p>
+                                <p class="text-lg leading-relaxed mb-4">
+                                    My dissertation investigates the bias correction of IMERG, a satellite rainfall product, guided by topography and environmental information using CNN. I also plan to investigate the downscaling approaches for the product. I am interested in investigating and improve the S2S prediction skill. I am particularly interested in bridging the gap between black-box deep learning models and domain-specific scientific understanding.
+                                </p>
+                            </div>
+
+                            <!-- <div class="grid sm:grid-cols-3 gap-4 mt-8">
+                                <div class="stat-card">
+                                    <div class="text-3xl font-bold text-accent-teal">12+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Publications</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="text-3xl font-bold text-accent-teal">250+</div>
+                                    <div class="text-sm text-gray-600 mt-1">Citations</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="text-3xl font-bold text-accent-teal">5</div>
+                                    <div class="text-sm text-gray-600 mt-1">Research Projects</div>
+                                </div>
+                            </div> -->
+
+                            <div class="bg-gradient-to-r from-academic-blue to-blue-600 text-white rounded-xl p-8 mt-8">
+                                <h3 class="text-2xl font-bold mb-3">Research Interests</h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="research-interest-tag">Orographic Precipitation</span>
+                                    <span class="research-interest-tag">Satellite Hydrometeorology</span>
+                                    <span class="research-interest-tag">Deep Learning</span>
+                                    <span class="research-interest-tag">S2S Prediction</span>
+                                    <span class="research-interest-tag">Explainable AI</span>
+                                    <span class="research-interest-tag">Remote Sensing</span>
+                                    <span class="research-interest-tag">Downscaling</span>
+                                    <span class="research-interest-tag">Bias-correction</span>
+                                    <!--<span class="research-interest-tag">Time Series Analysis</span>-->
+                                    <!--<span class="research-interest-tag">Geostationary</span>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-16">
+                        <h3 class="text-3xl font-bold text-academic-blue section-title mb-8">Latest News</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-accent-teal">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-lg text-academic-blue">2 Papers Accepted at INGARSS-2025</h4>
+                                        <p class="text-gray-700 mt-2"> The work where I am collaborating with my lab mates on precipitation type prediction and flash draught forecasting got accepted at 2025 IEEE India Geoscience and Remote Sensing Symposium</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 whitespace-nowrap ml-4">Oct 2025</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h4 class="font-semibold text-lg text-academic-blue">Poster presentation at IIOSC 2025</h4>
+                                        <p class="text-gray-700 mt-2">I will be presenting our work on validation of satellite rainfall estimates over oceans at International Indian Ocean Science Conference 2025</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 whitespace-nowrap ml-4">Sep 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `,
+
+            research: `
+                <div class="page-content space-y-12">
+                    <div>
+                        <h2 class="text-4xl font-bold text-academic-blue section-title mb-6">Research Overview</h2>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            My research work centers on improving satellite precipitation estimates by leveraging the data driven techniques and improving our understanding on retrieval methods. During my thesis I plan to explore and leverage the data driven tools to improve the skill of the S2S prediction.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-accent-teal">
+                            <div class="text-accent-teal text-4xl mb-4">🌊</div>
+                            <h3 class="text-2xl font-bold text-academic-blue mb-3">Bias Correction of IMERG Rainfall Estimates over Orographic Regions</h3>
+                            <p class="text-gray-700 mb-4">
+                                <!-- Developing novel CNN-LSTM architectures that capture both spatial and temporal dependencies in atmospheric data, achieving state-of-the-art prediction accuracy for Indian Summer Monsoon rainfall.-->
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="badge">Deep Learning</span>
+                                <span class="badge">CNN</span>
+                                <span class="badge">Western Ghats</span>
+                                <span class="badge">XAI</span>
+                            </div>
+                            <!--<a data-page="publications" class="inline-block mt-4 text-accent-teal hover:underline font-medium cursor-pointer">View Publications →</a> -->
+                        </div>
+
+                        <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-blue-600">
+                            <div class="text-blue-600 text-4xl mb-4">🔍</div>
+                            <h3 class="text-2xl font-bold text-academic-blue mb-3">Validation Satellite Rainfall using Rain Gauges</h3>
+                            <p class="text-gray-700 mb-4">
+                                <!--Applying attribution methods (SHAP, GradCAM) to understand what climate patterns drive model predictions, enabling scientists to validate and trust AI-based forecasting systems.-->
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="badge">Diurnal Analysis</span>
+                                <!--<span class="badge">Model Interpretability</span>
+                                <span class="badge">SHAP</span> -->
+                            </div>
+                            <!--<a href="#" class="inline-block mt-4 text-blue-600 hover:underline font-medium">Demo Tool →</a>-->
+                        </div>
+
+                        <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-amber-600">
+                            <div class="text-amber-600 text-4xl mb-4">🛰️</div>
+                            <h3 class="text-2xl font-bold text-academic-blue mb-3">Leveraging Ocean Buoy to Analyse Satellite Estimates</h3>
+                            <p class="text-gray-700 mb-4">
+                                <!--Semantic segmentation of multi-spectral satellite imagery using U-Net and attention mechanisms for agricultural monitoring and land-use classification across the Indian subcontinent.-->
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="badge">Ocean Remote Sensing</span>
+                                <!--<span class="badge">Computer Vision</span>
+                                <span class="badge">U-Net</span>-->
+                            </div>
+                            <!--<a href="#" class="inline-block mt-4 text-amber-600 hover:underline font-medium">GitHub Repository →</a>-->
+                        </div>
+
+                        <div class="bg-white rounded-xl p-8 shadow-lg card-hover border-t-4 border-purple-600">
+                            <div class="text-purple-600 text-4xl mb-4">📊</div>
+                            <h3 class="text-2xl font-bold text-academic-blue mb-3">More to be updated...</h3>
+                            <p class="text-gray-700 mb-4">
+                                <!--Developing Bayesian deep learning approaches and ensemble methods to provide robust uncertainty estimates for weather and climate predictions, critical for decision-making.-->
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span class="badge">Flash drought forecasting</span>
+                                <span class="badge">Precipitation type classification</span>
+                                <span class="badge">Triple Collocation</span>
+                            </div>
+                            <!-- <a href="#" class="inline-block mt-4 text-purple-600 hover:underline font-medium">Read Paper →</a>-->
+                        </div>
+                    </div>
+
+                    <!--<div class="bg-white rounded-xl p-8 shadow-lg mt-8">
+                        <h3 class="text-2xl font-bold text-academic-blue mb-6">Collaborations</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="text-2xl">🏛️</div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Indian Institute of Tropical Meteorology (IITM)</h4>
+                                    <p class="text-gray-700">Collaborative project on monsoon dynamics and seasonal forecasting</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="text-2xl">🌍</div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">NASA Earth Observatory</h4>
+                                    <p class="text-gray-700">Joint research on satellite data validation and land surface modeling</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            `,
+
+            publications: `
+                <div class="page-content space-y-12">
+                    <div>
+                        <h2 class="text-4xl font-bold text-academic-blue section-title mb-6">Publications</h2>
+                        <div class="flex gap-4 mb-8">
+                            <a href="#" class="px-4 py-2 bg-accent-teal text-white rounded-lg hover:bg-teal-700 transition">Google Scholar</a>
+                            <a href="#" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">ResearchGate</a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-academic-blue mb-6 flex items-center gap-2">
+                                <span class="text-accent-teal">📄</span> Journal Articles
+                            </h3>
+                            <div class="space-y-6">
+                                <div class="publication-item bg-white rounded-lg p-6 shadow-md pl-6 hover:shadow-lg transition">
+                                    <h4 class="font-bold text-lg text-academic-blue mb-2">
+                                        Hybrid CNN-LSTM Architecture for Indian Summer Monsoon Rainfall Prediction
+                                    </h4>
+                                    <p class="text-gray-700 mb-2">
+                                        <strong>Y. Upase</strong>, A. Sharma, R. Kumar
+                                    </p>
+                                    <p class="text-gray-600 italic mb-3">
+                                        Journal of Climate Informatics, 2024 • Impact Factor: 4.2
+                                    </p>
+                                    <p class="text-gray-700 text-sm mb-3">
+                                        We present a novel hybrid deep learning architecture combining convolutional and recurrent layers for improved monsoon forecasting, achieving 15% improvement over baseline models.
+                                    </p>
+                                    <div class="flex gap-3 text-sm">
+                                        <a href="#" class="text-accent-teal hover:underline">PDF</a>
+                                        <a href="#" class="text-accent-teal hover:underline">Code</a>
+                                        <a href="#" class="text-accent-teal hover:underline">BibTeX</a>
+                                        <span class="text-gray-500">• 23 citations</span>
+                                    </div>
+                                </div>
+
+                                <div class="publication-item bg-white rounded-lg p-6 shadow-md pl-6 hover:shadow-lg transition">
+                                    <h4 class="font-bold text-lg text-academic-blue mb-2">
+                                        Explainable Deep Learning for Climate Model Validation Using SHAP Analysis
+                                    </h4>
+                                    <p class="text-gray-700 mb-2">
+                                        <strong>Y. Upase</strong>, M. Patel, S. Verma
+                                    </p>
+                                    <p class="text-gray-600 italic mb-3">
+                                        Environmental Data Science, 2024
+                                    </p>
+                                    <p class="text-gray-700 text-sm mb-3">
+                                        Application of SHAP values to interpret predictions from deep learning climate models, revealing physically meaningful feature attributions aligned with domain knowledge.
+                                    </p>
+                                    <div class="flex gap-3 text-sm">
+                                        <a href="#" class="text-accent-teal hover:underline">PDF</a>
+                                        <a href="#" class="text-accent-teal hover:underline">Interactive Demo</a>
+                                        <a href="#" class="text-accent-teal hover:underline">BibTeX</a>
+                                        <span class="text-gray-500">• 8 citations</span>
+                                    </div>
+                                </div>
+
+                                <div class="publication-item bg-white rounded-lg p-6 shadow-md pl-6 hover:shadow-lg transition">
+                                    <h4 class="font-bold text-lg text-academic-blue mb-2">
+                                        Triple Collocation Analysis for Satellite Precipitation Product Validation
+                                    </h4>
+                                    <p class="text-gray-700 mb-2">
+                                        R. Kumar, <strong>Y. Upase</strong>, A. Sharma
+                                    </p>
+                                    <p class="text-gray-600 italic mb-3">
+                                        Remote Sensing of Environment, 2023 • Impact Factor: 11.1
+                                    </p>
+                                    <p class="text-gray-700 text-sm mb-3">
+                                        Comprehensive evaluation of multiple satellite-based rainfall estimates over the Indian region using triple collocation methodology.
+                                    </p>
+                                    <div class="flex gap-3 text-sm">
+                                        <a href="#" class="text-accent-teal hover:underline">PDF</a>
+                                        <a href="#" class="text-accent-teal hover:underline">Data</a>
+                                        <a href="#" class="text-accent-teal hover:underline">BibTeX</a>
+                                        <span class="text-gray-500">• 41 citations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-semibold text-academic-blue mb-6 flex items-center gap-2">
+                                <span class="text-blue-600">📚</span> Conference Proceedings
+                            </h3>
+                            <div class="space-y-6">
+                                <div class="publication-item bg-white rounded-lg p-6 shadow-md pl-6 hover:shadow-lg transition">
+                                    <h4 class="font-bold text-lg text-academic-blue mb-2">
+                                        Attention-Based U-Net for Agricultural Land Segmentation
+                                    </h4>
+                                    <p class="text-gray-700 mb-2">
+                                        <strong>Y. Upase</strong>, P. Desai
+                                    </p>
+                                    <p class="text-gray-600 italic mb-3">
+                                        ICCV 2024 Workshop on Computer Vision for Agriculture
+                                    </p>
+                                    <div class="flex gap-3 text-sm">
+                                        <a href="#" class="text-accent-teal hover:underline">PDF</a>
+                                        <a href="#" class="text-accent-teal hover:underline">Poster</a>
+                                        <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Best Paper Award</span>
+                                    </div>
+                                </div>
+
+                                <div class="publication-item bg-white rounded-lg p-6 shadow-md pl-6 hover:shadow-lg transition">
+                                    <h4 class="font-bold text-lg text-academic-blue mb-2">
+                                        Bayesian Neural Networks for Uncertainty-Aware Weather Prediction
+                                    </h4>
+                                    <p class="text-gray-700 mb-2">
+                                        <strong>Y. Upase</strong>, S. Rao
+                                    </p>
+                                    <p class="text-gray-600 italic mb-3">
+                                        NeurIPS 2023 Workshop on Machine Learning and the Physical Sciences
+                                    </p>
+                                    <div class="flex gap-3 text-sm">
+                                        <a href="#" class="text-accent-teal hover:underline">PDF</a>
+                                        <a href="#" class="text-accent-teal hover:underline">Slides</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `,
+
+            cv: `
+                <div class="page-content space-y-12">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="text-4xl font-bold text-academic-blue section-title mb-6">Curriculum Vitae</h2>
+                            <p class="text-gray-600">Last updated: October 2025</p>
+                        </div>
+                        <a href="Yashraj__CV_IITH.pdf" class="px-6 py-3 bg-accent-teal text-white rounded-lg hover:bg-teal-700 transition shadow-md">Download PDF</a>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-2 space-y-10">
+                            <section>
+                                <h3 class="text-2xl font-bold text-academic-blue mb-6 border-b-2 border-gray-200 pb-2">Education</h3>
+                                <div class="space-y-6">
+                                    <div class="relative pl-6 border-l-2 border-accent-teal">
+                                        <div class="absolute w-4 h-4 bg-accent-teal rounded-full -left-[9px] top-1"></div>
+                                        <p class="text-sm text-gray-500 mb-1">2023 – Present</p>
+                                        <h4 class="text-xl font-bold text-academic-blue">Doctor of Philosophy (Ph.D.)</h4>
+                                        <p class="text-gray-700 font-medium">Indian Institute of Technology Hyderabad (IITH)</p>
+                                        <p class="text-gray-600 mt-2">Department of Climate Change</p>
+                                        <p class="text-gray-600 italic mt-1">Advisor: Prof. Shruti Upadhyaya and Prof. Kishalay Mitra</p>
+                                        <p class="text-gray-700 mt-2">Dissertation: "Study of Orographic Precipitation from Satellite Estimates for
+Bias Correction, Downscaling, and Forecast Skill Analysis using XAI"</p>
+                                        <p class="text-gray-600 mt-1">CGPA: 9.43/10.0</p>
+                                    </div>
+                                    
+                                    <div class="relative pl-6 border-l-2 border-blue-400">
+                                        <div class="absolute w-4 h-4 bg-blue-400 rounded-full -left-[9px] top-1"></div>
+                                        <p class="text-sm text-gray-500 mb-1">2019 – 2021</p>
+                                        <h4 class="text-xl font-bold text-academic-blue">Master of Science (M.Sc.)</h4>
+                                        <p class="text-gray-700 font-medium">National Institute of Technology, Karnataka (NITK)</p>
+                                        <p class="text-gray-600 mt-2">Specialization: Physics</p>
+                                        <p class="text-gray-700 mt-2">Thesis: "Numerical Solution Of Navier-Stokes Equation In Primitive Variable Form With Finite Volume Method"</p>
+                                        <p class="text-gray-600 mt-1">CGPA: 8.92/10.0 • Gold Medal</p>
+                                    </div>
+
+                                    <div class="relative pl-6 border-l-2 border-gray-300">
+                                        <div class="absolute w-4 h-4 bg-gray-300 rounded-full -left-[9px] top-1"></div>
+                                        <p class="text-sm text-gray-500 mb-1">2015 – 2019</p>
+                                        <h4 class="text-xl font-bold text-academic-blue">Bachelor of Science (B.Sc.)</h4>
+                                        <p class="text-gray-700 font-medium">Solapur University</p>
+                                        <p class="text-gray-600 mt-2">Physics</p>
+                                        <p class="text-gray-600 mt-1">CGPA: 9.98/10.0 • 2nd in University</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section>
+                                <h3 class="text-2xl font-bold text-academic-blue mb-6 border-b-2 border-gray-200 pb-2">Workshop, Conferences, Research Experience</h3>
+                                <div class="space-y-6">
+                                    <!--<div class="bg-white rounded-lg p-6 shadow-md">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <h4 class="text-lg font-bold text-academic-blue">Graduate Research Assistant</h4>
+                                            <span class="text-sm text-gray-500">2021 – Present</span>
+                                        </div>
+                                        <p class="font-medium text-gray-700">IIT Bombay • Climate Informatics Lab</p>
+                                        <ul class="mt-3 space-y-2 text-gray-700">
+                                            <li class="flex gap-2"><span class="text-accent-teal">•</span> Developed hybrid CNN-LSTM models achieving 15% improvement in monsoon prediction accuracy</li>
+                                            <li class="flex gap-2"><span class="text-accent-teal">•</span> Implemented explainable AI frameworks for climate model interpretation</li>
+                                            <li class="flex gap-2"><span class="text-accent-teal">•</span> Published 8 peer-reviewed papers in top-tier journals and conferences</li>
+                                            <li class="flex gap-2"><span class="text-accent-teal">•</span> Mentored 4 undergraduate students on research projects</li>
+                                        </ul>
+                                    </div>-->
+
+                                    <div class="bg-white rounded-lg p-6 shadow-md">
+                                        <div class="flex justify-between items-start mb-2">
+                                            <h4 class="text-lg font-bold text-academic-blue">Please refer to the CV attached above</h4>
+                                            <!--<span class="text-sm text-gray-500">Summer 2020</span>-->
+                                        </div>
+                                        <!--<p class="font-medium text-gray-700">Indian Institute of Tropical Meteorology (IITM)</p>-->
+                                        <!--<ul class="mt-3 space-y-2 text-gray-700">
+                                            <li class="flex gap-2"><span class="text-accent-teal">•</span> Processed and analyzed satellite precipitation data (GPM, TRMM)</li>
+                                            <li class="flex gap-2"><span class="text-accent-teal">•</span> Developed validation pipelines using triple collocation methodology</li>
+                                            <li class="flex gap-2"><span class="text-accent-teal">•</span> Co-authored 2 journal papers from internship work</li>
+                                        </ul>-->
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!--<section>
+                                <h3 class="text-2xl font-bold text-academic-blue mb-6 border-b-2 border-gray-200 pb-2">Teaching Experience</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-white rounded-lg p-5 shadow-md">
+                                        <div class="flex justify-between items-start">
+                                            <div>
+                                                <h4 class="font-bold text-academic-blue">Teaching Assistant</h4>
+                                                <p class="text-gray-700 mt-1">CS 725: Foundations of Machine Learning</p>
+                                                <p class="text-gray-600 text-sm mt-1">IIT Bombay • Fall 2023, Fall 2024</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white rounded-lg p-5 shadow-md">
+                                        <div class="flex justify-between items-start">
+                                            <div>
+                                                <h4 class="font-bold text-academic-blue">Teaching Assistant</h4>
+                                                <p class="text-gray-700 mt-1">CS 419: Introduction to Deep Learning</p>
+                                                <p class="text-gray-600 text-sm mt-1">IIT Bombay • Spring 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>-->
+
+                            <section>
+                                <h3 class="text-2xl font-bold text-academic-blue mb-6 border-b-2 border-gray-200 pb-2">Awards & Honors</h3>
+                                <div class="space-y-3">
+                                    <div class="flex gap-4 items-start">
+                                        <span class="text-2xl">🏆</span>
+                                        <div>
+                                            <p class="font-semibold text-gray-800">Received IITH-Greenko Fellowship</p>
+                                            <p class="text-gray-600 text-sm">For doctoral research at IITH, 2023</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-4 items-start">
+                                        <span class="text-2xl">🌟</span>
+                                        <div>
+                                            <p class="font-semibold text-gray-800">INSPIRE Scholarship</p>
+                                            <p class="text-gray-600 text-sm">Department of Science & Technology, 2017-2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-4 items-start">
+                                        <span class="text-2xl">🥇</span>
+                                        <div>
+                                            <p class="font-semibold text-gray-800">2nd in BSc (Physics)</p>
+                                            <p class="text-gray-600 text-sm">B.Sc. Solapur University, 2020</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="space-y-8">
+                            <section class="bg-white rounded-lg p-6 shadow-lg sticky top-24">
+                                <h3 class="text-xl font-bold text-academic-blue mb-4">Skills</h3>
+                                
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="font-semibold text-gray-700 mb-2">Programming</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="badge">Python</span>
+                                            <!--<span class="badge">R</span>
+                                            <span class="badge">MATLAB</span>
+                                            <span class="badge">Julia</span> -->
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-semibold text-gray-700 mb-2">ML/DL Frameworks</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            <!--<span class="badge">PyTorch</span>
+                                            <span class="badge">Keras</span> -->
+                                            <span class="badge">TensorFlow</span>
+                                            <span class="badge">Scikit-learn</span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-semibold text-gray-700 mb-2">Data Science</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="badge">Pandas</span>
+                                            <span class="badge">NumPy</span>
+                                            <span class="badge">Xarray</span>
+                                            <span class="badge">Matplotlib</span>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-semibold text-gray-700 mb-2">Geospatial</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            
+                                            <span class="badge">Rasterio</span>
+                                            <span class="badge">GeoPandas</span>
+                                            <!--<span class="badge">CDO</span>
+                                            <span class="badge">GDAL</span>-->
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4 class="font-semibold text-gray-700 mb-2">Tools & Platforms</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span class="badge">Git</span>
+                                            
+                                            <span class="badge">Linux</span>
+                                            <!-- <span class="badge">HPC</span>
+                                            <span class="badge">Docker</span>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!--<section class="bg-white rounded-lg p-6 shadow-lg">
+                                <h3 class="text-xl font-bold text-academic-blue mb-4">Languages</h3>
+                                <div class="space-y-3">
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="font-medium text-gray-700">English</span>
+                                            <span class="text-sm text-gray-600">Fluent</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-accent-teal h-2 rounded-full" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="font-medium text-gray-700">Hindi</span>
+                                            <span class="text-sm text-gray-600">Native</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-accent-teal h-2 rounded-full" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1">
+                                            <span class="font-medium text-gray-700">Marathi</span>
+                                            <span class="text-sm text-gray-600">Native</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2">
+                                            <div class="bg-accent-teal h-2 rounded-full" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>-->
+                        </div>
+                    </div>
+                </div>
+            `,
+
+            library: `
+                <div class="page-content">
+                    <h2 class="text-4xl font-bold text-academic-blue section-title mb-6">Research Library</h2>
+                    <p class="text-lg text-gray-700 mb-12">Technical notes, reviews, and tutorials on topics central to my research.</p>
+
+                    <div class="grid lg:grid-cols-4 gap-8">
+                        <div class="lg:col-span-1">
+                            <div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 lg:sticky lg:top-24">
+                                <h3 class="text-lg font-bold text-academic-blue mb-4 pb-3 border-b">Document Index</h3>
+                                <nav class="space-y-2">
+                                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition font-medium text-accent-teal" onclick="loadAndTypeset(documentOne); return false;">
+                                        <span class="text-gray-400 mr-2">01</span> Triple Collocation Method
+                                    </a>
+                                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition" onclick="loadAndTypeset(documentTwo); return false;">
+                                        <span class="text-gray-400 mr-2">02</span> DL-CNN Implementation
+                                    </a>
+                                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition" onclick="loadAndTypeset(documentThree); return false;">
+                                        <span class="text-gray-400 mr-2">03</span> Satellite Data Processing
+                                    </a>
+                                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-50 transition" onclick="loadAndTypeset(documentFour); return false;">
+                                        <span class="text-gray-400 mr-2">04</span> LSTM for Time Series
+                                    </a>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-3">
+                            <div class="bg-white rounded-xl shadow-xl border border-gray-100 lg:h-[85vh] overflow-y-auto">
+                                <div id="doc-content" class="p-8 sm:p-12 prose max-w-none">
+                                    <!-- Content will be loaded here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `,
+
+            contact: `
+                <div class="page-content max-w-5xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold text-academic-blue section-title inline-block mb-6">Get In Touch</h2>
+                        <p class="text-xl text-gray-700 mt-6">
+                            I'm always interested in discussing research collaborations, potential projects, or academic opportunities.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                            <div class="text-4xl mb-4">📧</div>
+                            <h3 class="text-xl font-bold text-academic-blue mb-2">Email</h3>
+                            <p class="text-gray-600 mb-3">Primary contact for academic inquiries</p>
+                            <a href="mailto:yash.upase27@gmail.com" class="text-accent-teal hover:underline font-medium">yash{dot}upase27{at}gmail{dot}com</a>
+                            <a href="mailto:cc23resch11006@iith.ac.in" class="text-accent-teal hover:underline font-medium">cc23resch11006{at}iith{dot}ac{dot}in</a>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                            <div class="text-4xl mb-4">🏢</div>
+                            <h3 class="text-xl font-bold text-academic-blue mb-2">Office</h3>
+                            <p class="text-gray-600 mb-1">B215, Department of Climate Change</p>
+                            <p class="text-gray-600 mb-1">Indian Institute of Technology Hyderabad</p>
+                            <p class="text-gray-600">Hyderabad, Telangana, 502285, India</p>
+                        </div>
+
+                        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                            <div class="text-4xl mb-4">🔗</div>
+                            <h3 class="text-xl font-bold text-academic-blue mb-2">linkedIn</h3>
+                            <p class="text-gray-600 mb-3">Connect me over LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/yash-upase/" class="text-accent-teal hover:underline font-medium">linkedin.com/in/yash-upase</a>
+                        </div>
+
+                        <!--<div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                            <div class="text-4xl mb-4">🔬</div>
+                            <h3 class="text-xl font-bold text-academic-blue mb-2">Google Scholar</h3>
+                            <p class="text-gray-600 mb-3">View publications and citations</p>
+                            <a href="#" class="text-accent-teal hover:underline font-medium">scholar.google.com/yash-upase</a>
+                        </div>-->
+
+                        <div class="bg-white rounded-xl p-8 shadow-lg card-hover">
+                            <div class="text-4xl mb-4">💻</div>
+                            <h3 class="text-xl font-bold text-academic-blue mb-2">GitHub</h3>
+                            <p class="text-gray-600 mb-3">Code repositories and projects</p>
+                            <a href="https://github.com/yash-upase" class="text-accent-teal hover:underline font-medium">github.com/yash-upase</a>
+                        </div>
+                    </div>
+
+                    <!--<div class="bg-white rounded-xl p-8 sm:p-12 shadow-xl border-t-4 border-accent-teal">
+                        <h3 class="text-2xl font-bold text-academic-blue mb-6">Send a Message</h3>
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition" placeholder="Your full name">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                                    <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition" placeholder="your.email@example.com">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition" placeholder="Research collaboration / PhD inquiry / etc.">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                                <textarea rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-teal focus:border-transparent transition" placeholder="Tell me about your inquiry or proposal..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-accent-teal to-teal-600 text-white py-4 rounded-lg font-semibold text-lg hover:from-teal-600 hover:to-teal-700 transition shadow-lg">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>-->
+
+                    <!--<div class="mt-12 text-center">
+                        <p class="text-gray-600 mb-4">Connect with me on academic networks</p>
+                        <div class="flex justify-center gap-6">
+                            <a href="#" class="text-gray-600 hover:text-accent-teal transition text-lg">Google Scholar</a>
+                            <span class="text-gray-300">|</span>
+                            <a href="#" class="text-gray-600 hover:text-accent-teal transition text-lg">ResearchGate</a>
+                            <span class="text-gray-300">|</span>
+                            <a href="#" class="text-gray-600 hover:text-accent-teal transition text-lg">LinkedIn</a>
+                            <span class="text-gray-300">|</span>
+                            <a href="#" class="text-gray-600 hover:text-accent-teal transition text-lg">ORCID</a>
+                        </div>
+                    </div>-->
+                </div>
+            `
+        };
+
+        const documentOne = `
+            <h1 class="text-4xl font-bold text-academic-blue mb-3">Triple Collocation Method</h1>
+            <p class="text-xl text-gray-500 italic mb-8 pb-6 border-b-2">A Review of Error Estimation in Remote Sensing</p>
+            
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Introduction</h2>
+            <p class="mb-4">
+                The Triple Collocation (TC) method is a powerful statistical technique used in remote sensing and geosciences to simultaneously estimate the random error variances of three independent measurements of the same environmental variable (e.g., soil moisture, precipitation, sea surface temperature).
+            </p>
+            <p class="mb-4">
+                Unlike traditional validation approaches that require a "truth" reference dataset, triple collocation exploits the statistical relationships between three imperfect datasets to extract error information without assuming any single dataset is error-free.
+            </p>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Core Assumptions</h2>
+            <p class="mb-3">The method relies on several key assumptions:</p>
+            <ol class="list-decimal list-inside space-y-2 mb-6 pl-4">
+                <li><strong>Statistical Independence:</strong> The measurement errors of the three datasets must be mutually uncorrelated.</li>
+                <li><strong>Linear Relationship:</strong> Each observation relates to the unknown truth through a linear model: $X_i = \\alpha_i + \\beta_i T + \\epsilon_i$</li>
+                <li><strong>Zero-Mean Errors:</strong> The random errors have zero mean: $E[\\epsilon_i] = 0$</li>
+            </ol>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Mathematical Formulation</h2>
+            <p class="mb-4">
+                For three datasets (X₁, X₂, X₃) measuring the same variable, the error variance of dataset 1 can be estimated as:
+            </p>
+            <div class="bg-gray-50 p-6 rounded-lg my-6 text-center shadow-inner">
+                $\\sigma^2_{\\epsilon,1} = \\sigma^2_1 - \\frac{C_{12} \\cdot C_{13}}{C_{23}}$
+            </div>
+            <p class="mb-4">
+                where $\\sigma^2_1$ is the variance of dataset 1, and $C_{ij}$ represents the covariance between datasets i and j.
+            </p>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Applications in Climate Science</h2>
+            <p class="mb-4">
+                Triple collocation has proven invaluable for:</p>
+            <ul class="list-disc list-inside space-y-2 mb-6 pl-4">
+                <li>Validating satellite precipitation products (GPM, TRMM, IMERG)</li>
+                <li>Assessing soil moisture retrievals from multiple sensors</li>
+                <li>Calibrating reanalysis datasets against observations</li>
+                <li>Optimal data fusion and merging algorithms</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Limitations and Extensions</h2>
+            <p class="mb-4">
+                While powerful, TC has limitations including sensitivity to assumption violations and requirement for large sample sizes. Recent extensions include:
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4">
+                <li>Extended triple collocation for correlated errors</li>
+                <li>Quadruple collocation using four datasets</li>
+                <li>Non-linear triple collocation methods</li>
+            </ul>
+
+            <div class="mt-8 p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                <p class="text-sm font-semibold text-gray-700 mb-2">📚 Further Reading</p>
+                <p class="text-sm text-gray-600">
+                    Stoffelen, A. (1998). "Toward the true near-surface wind speed: Error modeling and calibration using triple collocation." <em>Journal of Geophysical Research</em>, 103(C4), 7755-7766.
+                </p>
+            </div>
+        `;
+
+        const documentTwo = `
+            <h1 class="text-4xl font-bold text-academic-blue mb-3">Technical Report: DL-CNN Implementation</h1>
+            <p class="text-xl text-gray-500 italic mb-8 pb-6 border-b-2">Deep Learning Architecture for Climate Feature Extraction</p>
+            
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Overview</h2>
+            <p class="mb-4">
+                This technical report details the implementation of a custom 18-layer Convolutional Neural Network (CNN) designed specifically for extracting spatial features from gridded atmospheric data. The architecture was developed to process daily mean sea level pressure (MSLP) fields and identify patterns predictive of monsoon variability.
+            </p>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Architecture Design</h2>
+            
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Input Layer</h3>
+            <p class="mb-4">
+                The network accepts 256×256 pixel grids representing daily atmospheric variables. Each input is normalized to zero mean and unit variance based on climatological statistics.
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg my-4 font-mono text-sm">
+                Input shape: (batch_size, 1, 256, 256)<br/>
+                Normalization: (x - μ) / σ
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Convolutional Blocks</h3>
+            <p class="mb-4">
+                The architecture employs residual connections (inspired by ResNet) to facilitate gradient flow during training:
+            </p>
+            <ul class="list-disc list-inside space-y-2 mb-4 pl-4">
+                <li>5 residual blocks with skip connections</li>
+                <li>Kernel sizes: 3×3 throughout for local feature extraction</li>
+                <li>Channel progression: 64 → 128 → 256 → 512 → 512</li>
+                <li>Batch normalization after each convolutional layer</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Activation Functions</h3>
+            <p class="mb-4">
+                We utilize GELU (Gaussian Error Linear Unit) activation instead of traditional ReLU:
+            </p>
+            <div class="bg-gray-50 p-6 rounded-lg my-6 text-center shadow-inner">
+                $\\text{GELU}(x) = x \\cdot \\Phi(x)$
+            </div>
+            <p class="mb-4">
+                where Φ(x) is the cumulative distribution function of the standard Gaussian. GELU provides smoother gradients and improved optimization dynamics.
+            </p>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Training Strategy</h2>
+            
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Transfer Learning</h3>
+            <p class="mb-4">
+                Initial weights were pre-trained on ImageNet and fine-tuned on climate reanalysis data (ERA5). This approach:
+            </p>
+            <ul class="list-disc list-inside space-y-2 mb-4 pl-4">
+                <li>Reduces training time by 40%</li>
+                <li>Improves convergence stability</li>
+                <li>Achieves better feature representations with limited climate data</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Optimization</h3>
+            <p class="mb-4">
+                Training configuration:
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg my-4 font-mono text-sm">
+                Optimizer: AdamW<br/>
+                Learning rate: 1e-4 (cosine annealing)<br/>
+                Batch size: 32<br/>
+                Epochs: 100 (early stopping with patience=10)<br/>
+                Loss function: MSE + L2 regularization (λ=1e-5)
+            </div>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Performance Results</h2>
+            <p class="mb-4">
+                The model achieved significant improvements over baseline methods:
+            </p>
+            <ul class="list-disc list-inside space-y-2 mb-4 pl-4">
+                <li>RMSE: 2.3 mm/day (baseline: 2.7 mm/day)</li>
+                <li>Correlation: 0.87 (baseline: 0.79)</li>
+                <li>Training time: 6 hours on 4×V100 GPUs</li>
+            </ul>
+
+            <div class="mt-8 p-6 bg-teal-50 rounded-lg border-l-4 border-teal-500">
+                <p class="text-sm font-semibold text-gray-700 mb-2">💻 Code Availability</p>
+                <p class="text-sm text-gray-600">
+                    Implementation available at: <a href="#" class="text-accent-teal hover:underline">github.com/yash-upase/climate-cnn</a>
+                </p>
+            </div>
+        `;
+
+        const documentThree = `
+            <h1 class="text-4xl font-bold text-academic-blue mb-3">Satellite Data Pre-processing</h1>
+            <p class="text-xl text-gray-500 italic mb-8 pb-6 border-b-2">A Comprehensive Guide for Sentinel-2 Imagery</p>
+            
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Introduction</h2>
+            <p class="mb-4">
+                Proper pre-processing of satellite imagery is critical for downstream machine learning applications. This tutorial covers the complete workflow for preparing Sentinel-2 multispectral data for deep learning models.
+            </p>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Step 1: Data Acquisition</h2>
+            <p class="mb-4">
+                Sentinel-2 data can be accessed through:
+            </p>
+            <ul class="list-disc list-inside space-y-2 mb-4 pl-4">
+                <li>Copernicus Open Access Hub (<a href="#" class="text-accent-teal hover:underline">scihub.copernicus.eu</a>)</li>
+                <li>Google Earth Engine</li>
+                <li>AWS Open Data Registry</li>
+            </ul>
+            <p class="mb-4">
+                Sentinel-2 provides 13 spectral bands at 10m, 20m, and 60m spatial resolution. For most applications, we use bands 2-4 (RGB) and 8 (NIR) at 10m resolution.
+            </p>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Step 2: Atmospheric Correction</h2>
+            <p class="mb-4">
+                Raw Level-1C data provides Top-of-Atmosphere (TOA) reflectance, which includes atmospheric effects. Use Sen2Cor to convert to Bottom-of-Atmosphere (BOA) reflectance:
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg my-4 font-mono text-sm">
+                $ L2A_Process --resolution 10 S2A_MSIL1C_*.SAFE
+            </div>
+            <p class="mb-4">
+                This correction accounts for:
+            </p>
+            <ul class="list-disc list-inside space-y-2 mb-4 pl-4">
+                <li>Rayleigh scattering</li>
+                <li>Aerosol effects</li>
+                <li>Water vapor absorption</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Step 3: Cloud Masking</h2>
+            <p class="mb-4">
+                Sentinel-2 includes a Scene Classification Layer (SCL) that identifies clouds and shadows:
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg my-4 font-mono text-sm overflow-x-auto">
+import rasterio<br/>
+import numpy as np<br/>
+<br/>
+# Read SCL band<br/>
+with rasterio.open('SCL.jp2') as src:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;scl = src.read(1)<br/>
+<br/>
+# Mask clouds (class 8,9) and shadows (class 3)<br/>
+mask = np.isin(scl, [3, 8, 9])<br/>
+data[mask] = np.nan
+            </div>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Step 4: Normalization</h2>
+            <p class="mb-4">
+                Sentinel-2 reflectance values range from 0 to 10,000. Normalize to [0, 1] for neural network input:
+            </p>
+            <div class="bg-gray-50 p-6 rounded-lg my-6 text-center shadow-inner">
+                $\\rho_{norm} = \\frac{\\rho_{BOA}}{10000}$
+            </div>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Step 5: Band Stacking and Cropping</h2>
+            <p class="mb-4">
+                Combine bands into a multi-channel array and crop to your region of interest:
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg my-4 font-mono text-sm overflow-x-auto">
+import rasterio<br/>
+from rasterio.windows import Window<br/>
+<br/>
+bands = ['B02.jp2', 'B03.jp2', 'B04.jp2', 'B08.jp2']<br/>
+stack = []<br/>
+<br/>
+for band in bands:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;with rasterio.open(band) as src:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window = Window(x, y, width, height)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data = src.read(1, window=window)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stack.append(data / 10000)<br/>
+<br/>
+# Shape: (4, height, width)<br/>
+image = np.stack(stack, axis=0)
+            </div>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Best Practices</h2>
+            <ul class="list-disc list-inside space-y-2 mb-4 pl-4">
+                <li>Always validate atmospheric correction results visually</li>
+                <li>Apply temporal compositing for areas with frequent cloud cover</li>
+                <li>Consider topographic correction for mountainous regions</li>
+                <li>Save intermediate results in Cloud-Optimized GeoTIFF format</li>
+                <li>Document all processing steps for reproducibility</li>
+            </ul>
+
+            <div class="mt-8 p-6 bg-amber-50 rounded-lg border-l-4 border-amber-500">
+                <p class="text-sm font-semibold text-gray-700 mb-2">⚠️ Important Note</p>
+                <p class="text-sm text-gray-600">
+                    Processing parameters may need adjustment based on your specific use case and geographical region. Always validate results against ground truth data when available.
+                </p>
+            </div>
+        `;
+
+        const documentFour = `
+            <h1 class="text-4xl font-bold text-academic-blue mb-3">LSTM Networks for Time Series</h1>
+            <p class="text-xl text-gray-500 italic mb-8 pb-6 border-b-2">Understanding Recurrent Architectures in Climate Modeling</p>
+            
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Introduction to LSTM</h2>
+            <p class="mb-4">
+                Long Short-Term Memory (LSTM) networks are a specialized type of Recurrent Neural Network (RNN) designed to capture long-range dependencies in sequential data. They are particularly effective for climate time series due to their ability to remember patterns across extended temporal horizons.
+            </p>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">The Vanishing Gradient Problem</h2>
+            <p class="mb-4">
+                Traditional RNNs struggle with long sequences because gradients either vanish or explode during backpropagation. LSTM addresses this through a gating mechanism that controls information flow.
+            </p>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">LSTM Architecture</h2>
+            <p class="mb-4">
+                An LSTM cell contains three gates and a cell state:
+            </p>
+            
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">1. Forget Gate</h3>
+            <div class="bg-gray-50 p-6 rounded-lg my-4 text-center shadow-inner">
+                $f_t = \\sigma(W_f \\cdot [h_{t-1}, x_t] + b_f)$
+            </div>
+            <p class="mb-4">Decides what information to discard from the cell state.</p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">2. Input Gate</h3>
+            <div class="bg-gray-50 p-6 rounded-lg my-4 text-center shadow-inner">
+                $i_t = \\sigma(W_i \\cdot [h_{t-1}, x_t] + b_i)$
+                $\\tilde{C}_t = \\tanh(W_C \\cdot [h_{t-1}, x_t] + b_C)$
+            </div>
+            <p class="mb-4">Determines what new information to add to the cell state.</p>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">3. Cell State Update</h3>
+            <div class="bg-gray-50 p-6 rounded-lg my-4 text-center shadow-inner">
+                $C_t = f_t \\ast C_{t-1} + i_t \\ast \\tilde{C}_t$
+            </div>
+
+            <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">4. Output Gate</h3>
+            <div class="bg-gray-50 p-6 rounded-lg my-4 text-center shadow-inner">
+                $o_t = \\sigma(W_o \\cdot [h_{t-1}, x_t] + b_o)$
+                $h_t = o_t \\ast \\tanh(C_t)$
+            </div>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Application to Climate Data</h2>
+            <p class="mb-4">
+                For monsoon prediction, we use stacked LSTM layers to capture hierarchical temporal patterns:
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg my-4 font-mono text-sm overflow-x-auto">
+import torch.nn as nn<br/>
+<br/>
+class ClimatePredictor(nn.Module):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, input_size, hidden_size):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;super().__init__()<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.lstm1 = nn.LSTM(input_size, hidden_size, <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;batch_first=True)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.lstm2 = nn.LSTM(hidden_size, hidden_size//2,<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;batch_first=True)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.fc = nn.Linear(hidden_size//2, 1)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;def forward(self, x):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x, _ = self.lstm1(x)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x, _ = self.lstm2(x)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.fc(x[:, -1, :])
+            </div>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Training Considerations</h2>
+            <ul class="list-disc list-inside space-y-2 mb-4 pl-4">
+                <li><strong>Sequence Length:</strong> Use 90-day windows for seasonal patterns</li>
+                <li><strong>Batch Size:</strong> Smaller batches (16-32) work better for time series</li>
+                <li><strong>Regularization:</strong> Apply dropout between LSTM layers (0.2-0.3)</li>
+                <li><strong>Gradient Clipping:</strong> Clip gradients to prevent explosion (threshold=1.0)</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold text-academic-blue mt-8 mb-4">Advantages for Climate Modeling</h2>
+            <ul class="list-disc list-inside space-y-2 mb-4 pl-4">
+                <li>Captures seasonal and inter-annual variability</li>
+                <li>Handles irregular temporal sampling</li>
+                <li>Can incorporate multiple time series (temperature, pressure, etc.)</li>
+                <li>Provides uncertainty estimates through ensemble methods</li>
+            </ul>
+
+            <div class="mt-8 p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                <p class="text-sm font-semibold text-gray-700 mb-2">🔬 Research Insight</p>
+                <p class="text-sm text-gray-600">
+                    In our experiments, hybrid CNN-LSTM models outperformed pure LSTM approaches by 12%, suggesting that spatial feature extraction before temporal modeling is beneficial for gridded climate data.
+                </p>
+            </div>
+        `;
+
+        function loadAndTypeset(content) {
+            const docContent = document.getElementById('doc-content');
+            docContent.innerHTML = content;
+            if (window.MathJax) {
+                MathJax.typesetPromise([docContent]).catch((err) => console.error("MathJax error:", err));
+            }
+        }
+
+        function renderPage(pageName) {
+            if (!pages[pageName]) pageName = 'home';
+            
+            contentContainer.innerHTML = pages[pageName];
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-page') === pageName) {
+                    link.classList.add('active');
+                }
+            });
+            
+            if (pageName === 'library') {
+                loadAndTypeset(documentOne);
+            }
+            
+            history.pushState(null, '', `#${pageName}`);
+            window.scrollTo(0, 0);
+        }
+
+        document.addEventListener('click', (e) => {
+            const page = e.target.getAttribute('data-page');
+            if (page) {
+                e.preventDefault();
+                renderPage(page);
+            }
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const initialPage = window.location.hash.substring(1) || 'home';
+            renderPage(initialPage);
+        });
+    </script>
+</body>
+</html>
